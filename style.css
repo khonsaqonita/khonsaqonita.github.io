@@ -1,0 +1,114 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container{
+    max-width: 1600px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li{
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a{
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #fff5f7;
+    padding: 0.5rem 1.rem;
+    border-radius: 999px;
+}
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1; 
+    display: flex;
+    align-items: center;
+}
+
+main .content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+main .content .content-description{
+    flex: 1 1;
+}
+
+main .content .content-description .title{
+    font-size: 2rem;
+    margin-block: 1rem;
+}
+
+main .content .content-description p{
+    line-height: 2 rem;
+    font-size: 1rem;
+}
+
+main .content .conten-image img{
+    margin: auto;
+    min-width: 200px;
+    width: 300px;
+}
+
+main footer{
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main footer .socialmedia{
+    height: 100%;
+    display: flex;
+}
+
+main footer .socialmedia ul{
+    padding: 1.rem 1rem;
+    margin: auto;
+    border-top: 12px;
+    border-bottom: 12 px;
+    background-color: #7a665b;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main footer .socialmedia li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ffdede;
+}
